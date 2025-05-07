@@ -30,7 +30,7 @@ body {
   font-family: "Giga Sans", sans-serif;
 }
 
-/* Hero Section */
+/*=== Hero Section === */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -282,7 +282,7 @@ body {
   }
 }
 
-/* Products Section */
+/* ===Products Section=== */
 .products-section {
   padding: 80px 20px;
   background: #fff;
@@ -432,7 +432,6 @@ body {
   align-items: center;
 }
 
-/* Fixed Shopee Logo Size */
 .shopee-logo {
   width: 40px;
   height: 55px;
@@ -469,7 +468,6 @@ body {
 
 /* Small Mobile - up to 480px */
 @media (max-width: 480px) {
-  /* These styles will ONLY affect small mobile devices */
   .section-title {
     font-size: 32px;
     padding: 0 15px;
@@ -497,7 +495,6 @@ body {
     padding: 0 6px 2px;
   }
 
-  /* Keep hover effects consistent */
   .category:hover::after {
     height: 1px;
   }
@@ -505,14 +502,13 @@ body {
 
 /* Desktop - 1025px and up */
 @media (min-width: 1025px) {
-  /* Desktop-specific styles if needed */
   .category {
     font-size: 16px;
     padding: 0 10px 3px;
   }
 }
 
-/* Product Description Section */
+/* ===Product Description Section=== */
 .product-description-section {
   background: white;
 }
@@ -567,9 +563,8 @@ body {
   }
 }
 
-/* Mobile View - Adjusted for better mobile experience */
+/* Mobile View  */
 @media (max-width: 992px) {
-  /* Layout adjustments */
   .right-image {
     flex-direction: column !important;
   }
@@ -580,7 +575,6 @@ body {
     flex-direction: column;
   }
 
-  /* Image adjustments - slightly larger */
   .sold-image {
     width: 100%;
     padding: 0 10px;
@@ -595,7 +589,6 @@ body {
     margin-right: 0;
   }
 
-  /* Text adjustments - slightly smaller */
   .sold-message {
     transform: translateX(0) !important;
     padding: 0 15px !important;
@@ -603,18 +596,17 @@ body {
   }
 
   .sold-message h3 {
-    font-size: 1.5rem !important; /* Smaller heading */
+    font-size: 1.5rem !important;
     margin-bottom: 1rem !important;
   }
 
   .sold-message p {
-    font-size: 1rem !important; /* Smaller text */
+    font-size: 1rem !important;
     line-height: 1.5 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
-  /* Remove Bootstrap gutters on mobile */
   .gx-5 {
     --bs-gutter-x: 0 !important;
   }
@@ -675,7 +667,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: clamp(2.5rem, 5vw, 5rem);
-  color: white; /* White text on desktop */
+  color: white;
   position: relative;
   display: inline-block;
   padding: 0 clamp(1rem, 3vw, 2rem);
@@ -689,7 +681,7 @@ body {
   transform: translateY(-50%);
   width: clamp(2rem, 5vw, 4rem);
   height: 2px;
-  background: white; /* White lines on desktop */
+  background: white;
 }
 
 .section-title-know-more:before {
@@ -721,6 +713,7 @@ body {
   margin: 0 auto 15px;
   border-radius: 10%;
   overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .know-more-img-content {
@@ -763,7 +756,6 @@ body {
     display: none;
   }
 
-  /* Change title to black when background is removed */
   .know-more-title-container {
     background: #fff;
     padding: 6vh 0;
@@ -781,9 +773,8 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  /* ONLY CHANGE MADE - Adjusted mobile title size */
   .section-title-know-more {
-    font-size: clamp(1.8rem, 6vw, 2.5rem); /* Changed from original */
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
   }
 
   .know-more-card-image {
@@ -815,9 +806,8 @@ body {
   }
 }
 
-/* Footer Style */
+/* ===Footer Style=== */
 
-/* ===== FOOTER CORE STYLES ===== */
 .footer-section {
   background-color: #050505;
   color: white;
@@ -826,7 +816,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== TEXT LOGO ===== */
+/* TEXT LOGO */
 .logo-text {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -838,7 +828,6 @@ body {
   line-height: 1;
 }
 
-/* ===== SOCIAL ICONS ===== */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -846,7 +835,6 @@ body {
   margin-top: 1rem;
 }
 
-/* ===== FOOTER HEADINGS ===== */
 .footer-heading {
   font-size: 1.1rem;
   font-weight: 500;
@@ -866,13 +854,11 @@ body {
   background: white;
 }
 
-/* Center align heading underline on mobile */
 .text-center .footer-heading:after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* ===== FOOTER LINKS ===== */
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -894,7 +880,6 @@ body {
   opacity: 0.8;
 }
 
-/* ===== CONTACT SECTION ===== */
 .footer-contact ul {
   list-style: none;
   padding: 0;
@@ -905,15 +890,13 @@ body {
   margin-bottom: 0.8rem;
 }
 
-/* ===== COPYRIGHT SECTION ===== */
 .copyright {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: 0.5px;
 }
 
-/* ===== RESPONSIVE ADJUSTMENTS ===== */
-/* Mobile-specific styles */
+/* Mobile styles */
 @media (max-width: 767px) {
   .footer-section {
     padding: 2rem 0;
