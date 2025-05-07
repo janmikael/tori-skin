@@ -750,6 +750,7 @@ body {
   color: #7c7c7c;
   display: block;
   letter-spacing: 1px;
+  cursor: pointer !important;
 }
 
 /* Responsive Adjustments */
